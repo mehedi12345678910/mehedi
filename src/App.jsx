@@ -41,54 +41,30 @@
 
 
 //////////
-// import React, { useRef } from 'react'
-
-// const App = () => {
-//   let FirstName=useRef();
-//   let LastName=useRef();
-
-//   const change =()=>{
-// let First=FirstName.current.value;
-// let Last=LastName.current.value;
-// alert(First + ""+ Last)
-// }
-//   return (
-//     <div>
-
-// <input ref={FirstName} placeholder='First Name' />
-// <input ref={LastName}  placeholder='Last Name' />
-// <button onClick={change}>Click</button>
-
-//     </div>
-//   )
-// }
-
-// export default App
-
 import React, { useRef } from 'react'
-const App = () => {
-    let fast=useRef();
-    let last=useRef();
-    const change=()=>{
-        let F=fast.current.value;
-        let L=last.current.value;
-       
 
-         
-    }
-    
+const App = () => {
+  let FirstName=useRef();
+  let LastName=useRef();
+
+  const change =()=>{
+let First=FirstName.current.value;
+let Last=LastName.current.value;
+alert(First + ""+ Last)
+}
   return (
     <div>
-        <h1 ref={fast}></h1>
-      
-   <input ref={fast} />
-   <input ref={last} />
-   <button onClick={change}>click</button>
+
+<input ref={FirstName} placeholder='First Name' />
+<input ref={LastName}  placeholder='Last Name' />
+<button onClick={change}>Click</button>
+
     </div>
   )
 }
 
 export default App
+
 
 /////
 // import React, { useRef } from 'react'
